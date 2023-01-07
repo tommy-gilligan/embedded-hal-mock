@@ -13,6 +13,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Print a warning to stderr and fail test if a mock is dropped without having
   calling `.done()` on it, or if `.done()` is called twice (#59, #61)
 
+### Changed
+
+- When updating expectations on a mock by calling `.expect(...)` on it, assert
+  that previous expectations have been consumed (#63)
+
 ### Fixed
 
 - `Generic` mock: Fix a bug that caused the call to `.done()` to fail if
@@ -58,7 +63,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Fixed
 
--  Fix link to digital pin docs (#28)
+- Fix link to digital pin docs (#28)
 
 
 ## 0.7.0 - 2019-05-22

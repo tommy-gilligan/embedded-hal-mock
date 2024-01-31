@@ -9,7 +9,9 @@ pub use crate::eh1::error::MockError;
 
 pub mod delay;
 pub mod i2c;
-pub mod pin;
+pub mod digital;
+#[deprecated]
+pub use digital as pin;
 pub mod pwm;
 pub mod serial;
 pub mod spi;
